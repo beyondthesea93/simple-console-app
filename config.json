@@ -1,0 +1,145 @@
+{
+  "supportedSchema": ["organization", "ticket", "user"],
+  "data": {
+    "organization": "data/organizations.json",
+    "ticket": "data/tickets.json",
+    "user": "data/users.json"
+  },
+  "supportedSearchField": {
+    "organization": ["_id", "url", "external_id", "name", "domain_names", "created_at", "details", "shared_tickets", "tags"],
+    "ticket": ["_id", "url", "external_id", "created_at", "type", "subject", "description", "priority", "status", "submitter_id", "assignee_id", "organization_id", "tags", "has_incidents", "due_at", "via"],
+    "user": ["_id", "url", "external_id", "name", "alias", "created_at", "active", "verified", "shared", "locale", "timezone", "last_login_at", "email", "phone", "signature", "organization_id", "tags", "suspended", "role"]
+  },
+  "display": {
+    "organization": [
+      {
+        "key": "_id",
+        "label": "ID"
+      },
+      {
+        "key": "name",
+        "label": "NAME"
+      },
+      {
+        "key": "domain_names",
+        "label": "DOMAIN NAME"
+      },
+      {
+        "key": "details",
+        "label": "DETAILS"
+      },
+      {
+        "key": "tags",
+        "label": "TAGS"
+      },
+      {
+        "key": "tickets",
+        "label": "TICKETS"
+      },
+      {
+        "key": "users",
+        "label": "USERS"
+      }
+    ],
+    "user": [
+      {
+        "key": "_id",
+        "label": "ID"
+      },
+      {
+        "key": "name",
+        "label": "NAME"
+      },
+      {
+        "key": "alias",
+        "label": "ALIAS"
+      },
+      {
+        "key": "active",
+        "label": "ACTIVE"
+      },
+      {
+        "key": "timezone",
+        "label": "TIME ZONE"
+      },
+      {
+        "key": "email",
+        "label": "EMAIL"
+      },
+      {
+        "key": "phone",
+        "label": "PHONE"
+      },
+      {
+        "key": "signature",
+        "label": "SIGNATURE"
+      },
+      {
+        "key": "tags",
+        "label": "TAGS"
+      },
+      {
+        "key": "role",
+        "label": "ROLE"
+      },
+      {
+        "key": "organization_name",
+        "label": "ORGANIZATION"
+      },
+      {
+        "key": "submitted_tickets",
+        "label": "SUBMITTED TICKETS"
+      },
+      {
+        "key": "assigned_tickets",
+        "label": "ASSIGNED TICKETS"
+      }
+    ],
+    "ticket": [
+      {
+        "key": "_id",
+        "label": "ID"
+      },
+      {
+        "key": "type",
+        "label": "TYPE"
+      },
+      {
+        "key": "subject",
+        "label": "SUBJECT"
+      },
+      {
+        "key": "description",
+        "label": "DESCRIPTION"
+      },
+      {
+        "key": "priority",
+        "label": "PRIORITY"
+      },
+      {
+        "key": "status",
+        "label": "STATUS"
+      },
+      {
+        "key": "tags",
+        "label": "TAGS"
+      },
+      {
+        "key": "via",
+        "label": "VIA"
+      },
+      {
+        "key": "submitter_name",
+        "label": "SUBMITTER"
+      },
+      {
+        "key": "assignee_name",
+        "label": "ASSIGNEE"
+      },
+      {
+        "key": "organization_name",
+        "label": "ORGANIZATION"
+      }
+    ]
+  }
+}
